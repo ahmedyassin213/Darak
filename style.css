@@ -1,0 +1,877 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --primary:#1e6f5c;
+    --secondary: #d97706;
+}
+body{
+    font-family: "Cairo";
+}
+.btn1{
+    padding: 10px 25px;
+    color: white;
+    background-color: var(--primary);
+    border: 1px solid transparent;
+    border-radius: 15px;
+    font-family: "Cairo";
+}
+.btn2{
+     padding: 10px 25px;
+    color: var(--primary);
+    background-color: transparent;
+    border: 1px solid var(--primary);
+    border-radius: 15px;
+    font-family: "Cairo";
+}
+header{
+    z-index: 1000;
+    position: sticky;
+    top: 0%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    display: flex;
+    padding: 10px 170px;
+    background-color: white;
+    color: var(--primary);
+    justify-content: space-between;
+    align-items: center;
+    span{
+        font-size: 26px;
+        font-weight: 700;
+    }
+    ul{
+        display: flex;
+        list-style: none;
+        gap: 25px;
+        a{
+            font-weight: 600;
+            text-decoration: none;
+            color: var(--primary);
+
+        }
+    }
+}
+.hero{
+    padding: 25px 130px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #edf7f5;
+    .heroLeft{
+        span{
+            font-size: 250px;
+        }
+    }
+    .heroRight{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        padding: 0px 80px;
+        h1{
+            font-size: 45px;
+            color: black;
+            span{
+                color: var(--primary);
+            }
+        }
+        p{
+            font-size: 16px;
+            color: black;
+            opacity: 0.8;
+        }
+        .btns{
+            display: flex;
+            gap: 25px;
+        }
+
+    }
+}
+.carousel{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    background-color: var(--primary);
+    padding: 15px 130px;
+    .carouselCard{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+        color: white;
+        .number{
+            font-size: 25px;
+            font-weight: 800;
+        }
+        .word{
+            font-size: 20px;
+            font-weight: 700;
+        }
+    }
+}
+.units{
+    padding: 50px 130px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    background-color: rgb(245, 244, 244);
+    h2{
+        font-weight: 800;
+        font-size: 32px;
+    }
+    p{
+        opacity: 0.8;
+        font-size: 16px;
+    }
+    .unitCards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        
+        .unitCard{
+            position: relative;
+            .grab1,.grab2{
+                position: absolute;
+                font-size: 12px;
+                top: 5%;
+                right: 5%;
+                color: white;
+                padding: 3px 9px;
+                border-radius: 15px;
+            }
+            .grab1{
+                background-color: var(--primary);
+            }
+            .grab2{
+                background-color: var(--secondary);
+            }
+            transition: 0.3s;
+            overflow: hidden;
+            margin-bottom: 20px;
+            hr{
+                width: 100%;
+            }
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            border-radius: 30px;
+            width: 27%;
+            img{
+                width: 100%;
+            }
+            .rest{
+                .specs{
+                    display: flex;
+                    gap: 25px;
+                    span{
+                        background-color: rgb(234, 231, 231);
+                        padding: 3px 7px;
+                        border-radius: 10px;
+                        font-size: 12px;
+                    }
+                }
+                p{
+                    font-size: 14px;
+                }
+                padding: 15px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                .cta{
+                    display: flex;
+                    justify-content: space-between;
+                    .price{
+                        color: var(--primary);
+                        font-weight: 700;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: var(--secondary);
+                    }
+                }
+            }
+        }
+    }
+
+}
+.unitCard:hover{
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transform: translateY(-5px);
+}
+.about{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    padding: 50px 130px;
+    background-color: gainsboro;
+   .aboutLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    .list{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        ul{
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+        }
+    }
+   }
+   .aboutRight{
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+   }
+    .abCard{
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        border-radius: 30px;
+        background-color: white;
+        p{
+            text-align: center;
+            font-size: 14px;
+            opacity: 0.8;
+            background-color: white;
+            margin: 5px 20px;
+        }
+        img{
+            width: 100%;
+        }
+    }
+}
+.services{
+   padding: 50px 130px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    background-color: rgb(245, 244, 244);
+    h2{
+        font-weight: 800;
+        font-size: 32px;
+    }
+    p{
+        opacity: 0.8;
+        font-size: 16px;
+    }
+    .serviceCards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        .serviceCard{
+            width: 27%;
+            background-color: white;
+            border-radius: 30px;
+            overflow: hidden;
+            align-items: center;
+            span{
+                font-size: 45px;
+            }
+            img{
+                width: 100%;
+            }
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 20px;
+            transition: 0.3s;
+
+        }
+        .serviceCard:hover{
+             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transform: translateY(-5px);
+        }
+    }
+
+}
+.prices{
+     padding: 50px 130px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    background-color: rgb(245, 244, 244);
+    h2{
+        font-weight: 800;
+        font-size: 32px;
+    }
+    p{
+        opacity: 0.8;
+        font-size: 16px;
+    }
+    .tableCard{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 30px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        p{
+            text-align: center;
+            background-color: white;
+        }
+        background-color: color;
+        table{
+            width: 100%;
+            th{
+                background-color: var(--primary);
+                color: white;
+                padding: 10px ;
+            }
+            tr{
+                background-color: white;
+            }
+            td{
+                text-align: center;
+                padding: 10px;
+            }
+            tr:nth-of-type(2), tr:nth-of-type(4){
+                background-color: transparent;
+            }
+
+        }
+    }
+}
+.reviews{
+      padding: 50px 130px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    background-color: white;
+    h2{
+        font-weight: 800;
+        font-size: 32px;
+    }
+    .revCards{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        .revCard{
+            padding: 20px;
+            background-color: rgb(245, 244, 244);
+            border-radius: 30px;
+            display: flex;
+            flex-direction: column;
+            i{
+                color: var(--primary);
+                font-size: 25px;
+            }
+            p{
+                font-size: 16px;
+                opacity: 0.8;
+            }
+            .name{
+                font-weight: 800;
+            }
+            .address{
+                font-size: 14px;
+                opacity: 0.8;
+            }
+        }
+    }
+
+}
+.faq{
+    padding: 50px 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(247, 243, 243);
+    .question{
+        background-color: white;
+        border-radius: 12px;
+        border: 1px solid transparent;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        width: 80%;
+        padding: 10px;
+    }
+}
+.whatsapp{
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 25px;
+    border: 1px solid transparent;
+    font-family: "Cairo";
+    i{
+        color: white;
+        font-size: 25px;
+    }
+    background-color: rgb(31, 239, 31);
+    border-radius: 35px;
+    position: fixed;
+    bottom: 5%;
+    left: 2%;
+}
+/* Contact */
+.contact {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin: 0 0 16px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 14px;
+}
+
+.contact h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  border-radius: 4px;
+  background: #1f6f5b;
+}
+
+.contact > p {
+  color: #6b7280;
+  font-size: 0.95rem;
+  margin: 0 0 28px;
+}
+
+.contactCard {
+  background: #fff;
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 26px;
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  text-align: right;
+}
+
+.contactCard label {
+  display: block;
+  font-weight: 700;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #1a1a1a;
+  margin-bottom: 6px;
+}
+
+.contactCard textarea {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  height: 42px;
+  padding: 9px 14px;
+  border: 1px solid #d9dee3;
+  border-radius: 8px;
+  background: #fff;
+  font-family: inherit;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #1a1a1a;
+  resize: none;
+  overflow: hidden;          /* removes the weird scrollbars */
+  outline: none;
+  margin-bottom: 16px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.contactCard textarea::placeholder {
+  color: #9ca3af;
+}
+
+.contactCard textarea:focus {
+  border-color: #1f6f5b;
+  box-shadow: 0 0 0 3px rgba(31, 111, 91, 0.12);
+}
+
+.contactCard .flex {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-auto-flow: column;
+  column-gap: 16px;
+}
+
+/* message box: taller, scrollbar only if the text overflows */
+.contactCard #msg {
+  height: 100px;
+  resize: vertical;
+  overflow: auto;
+  margin-bottom: 0;
+}
+
+@media (max-width: 640px) {
+  .contactCard {
+    padding: 20px 16px;
+  }
+  .contactCard .flex {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    grid-auto-flow: row;
+  }
+}
+/* Footer */
+.footer {
+  background: #1c2536;
+  color: #cbd5e1;
+  padding: 50px 0 0;
+}
+
+.footerGrid {
+  max-width: 1374px;
+  margin: 0 auto;
+  padding: 0 20px 40px;
+  display: grid;
+  grid-template-columns: 1.8fr 1fr 1fr;
+  gap: 40px;
+  text-align: right;
+}
+
+.footerCol h3 {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 18px;
+}
+
+.footerCol p,
+.footerCol a {
+  display: block;
+  color: #cbd5e1;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin: 0 0 6px;
+  text-decoration: none;
+}
+
+.footerCol a {
+  transition: color 0.2s;
+}
+
+.footerCol a:hover {
+  color: #fff;
+}
+
+.footerBottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  text-align: center;
+}
+
+.footerBottom p {
+  margin: 0;
+  color: #cbd5e1;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .footerGrid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}
+/* ===================== Responsive ===================== */
+
+/* Large tablets / small laptops */
+@media (max-width: 1200px) {
+  header,
+  .hero,
+  .carousel,
+  .units,
+  .about,
+  .services,
+  .prices,
+  .reviews,
+  .faq {
+    padding-inline: 60px;
+  }
+
+  .hero .heroRight {
+    padding: 0 40px;
+  }
+
+  .hero .heroLeft span {
+    font-size: 200px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  header,
+  .hero,
+  .carousel,
+  .units,
+  .about,
+  .services,
+  .prices,
+  .reviews,
+  .faq {
+    padding-inline: 30px;
+  }
+
+  .hero .heroRight {
+    padding: 0 20px;
+    gap: 22px;
+  }
+
+  .hero .heroRight h1 {
+    font-size: 36px;
+  }
+
+  .hero .heroLeft span {
+    font-size: 150px;
+  }
+
+  .units .unitCards,
+  .services .serviceCards {
+    width: 100%;
+  }
+
+  .units .unitCards .unitCard,
+  .services .serviceCards .serviceCard {
+    width: calc(50% - 10px);
+  }
+
+  .about {
+    gap: 40px;
+  }
+
+  .about .aboutRight {
+    width: 45%;
+  }
+
+  .prices .tableCard {
+    width: 95%;
+  }
+
+  .faq .question {
+    width: 90%;
+  }
+
+  .reviews .revCards {
+    flex-wrap: wrap;
+  }
+}
+
+/* Phones & small tablets */
+@media (max-width: 768px) {
+  /* header: logo on top, links in a scrollable row */
+  header {
+    flex-direction: column;
+    gap: 6px;
+    padding-block: 8px;
+  }
+
+  header span {
+    font-size: 22px;
+  }
+
+  header ul {
+    gap: 18px;
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 4px;
+  }
+
+  header ul a {
+    font-size: 14px;
+  }
+
+  /* hero: stack, emoji on top */
+  .hero {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding-block: 30px;
+  }
+
+  .hero .heroRight {
+    padding: 0;
+    align-items: center;
+  }
+
+  .hero .heroRight h1 {
+    font-size: 30px;
+  }
+
+  .hero .heroRight .btns {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .hero .heroLeft span {
+    font-size: 110px;
+  }
+
+  /* stats: 2 per row */
+  .carousel {
+    flex-wrap: wrap;
+    row-gap: 18px;
+    padding-inline: 20px;
+  }
+
+  .carousel .carouselCard {
+    width: 50%;
+  }
+
+  /* section titles */
+  .units h2,
+  .services h2,
+  .prices h2,
+  .reviews h2,
+  .faq h2 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .units,
+  .services,
+  .prices {
+    text-align: center;
+  }
+
+  .units .unitCards .unitCard {
+    text-align: right;
+  }
+
+  /* about: stack */
+  .about {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-block: 40px;
+  }
+
+  .about .aboutRight {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .about .abCard {
+    width: 100%;
+    max-width: 450px;
+  }
+
+  .about .aboutLeft {
+    gap: 20px;
+  }
+
+  .about .aboutLeft p br {
+    display: none;
+  }
+
+  /* prices */
+  .prices .tableCard {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .prices .tableCard table th,
+  .prices .tableCard table td {
+    padding: 8px 6px;
+    font-size: 13px;
+  }
+
+  /* reviews: stack */
+  .reviews .revCards {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .reviews .revCards .revCard {
+    width: auto;
+  }
+
+  .faq .question {
+    width: 100%;
+  }
+
+  /* whatsapp button a bit smaller */
+  .whatsapp {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .whatsapp i {
+    font-size: 20px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 600px) {
+  .units .unitCards .unitCard,
+  .services .serviceCards .serviceCard {
+    width: 100%;
+  }
+
+  .units,
+  .services,
+  .prices,
+  .reviews,
+  .faq {
+    padding-block: 35px;
+  }
+
+  .prices .tableCard table th,
+  .prices .tableCard table td {
+    font-size: 12px;
+    padding: 7px 4px;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 480px) {
+  header,
+  .hero,
+  .carousel,
+  .units,
+  .about,
+  .services,
+  .prices,
+  .reviews,
+  .faq {
+    padding-inline: 16px;
+  }
+
+  .hero .heroRight h1 {
+    font-size: 26px;
+  }
+
+  .hero .heroLeft span {
+    font-size: 90px;
+  }
+
+  .carousel .carouselCard .number {
+    font-size: 22px;
+  }
+
+  .carousel .carouselCard .word {
+    font-size: 16px;
+  }
+
+  /* whatsapp becomes an icon-only round button */
+  .whatsapp {
+    font-size: 0;
+    padding: 12px 14px;
+    border-radius: 50%;
+  }
+
+  .whatsapp i {
+    font-size: 26px;
+  }
+}
